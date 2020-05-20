@@ -1,0 +1,45 @@
+Assignment 1 Report 
+
+NOTE: 
+a). The values of Precision, Recall and F1-score (training with 100% of the data) is taken from the nbevaluate.py script that was written by me, it is submitted as well. 
+b). For task 2, another function was created to read the data (read_data_10percent()), which works the same way as the regular read_data function, except it uses counts to read only 750 spam emails (approx 10% of 7496 i.e. the original number of spam emails), and 950 ham emails (approx 10% of 9533 i.e. the original number of ham emails). In order to run the second task, only the read data function needs to be changed to this, all other steps will be the same. The code for this is part of the original nblearn.py script. 
+
+
+
+
+Name: Shruthi Shankar (2112880883)
+
+1. Performance on the development data with 100% of the training data
+1a. spam precision:  0.9928137092316197 
+1b. spam recall: 0.9774149659863945
+1c. spam F1 score: 0.9850541615247498
+1d. ham precision:  0.9466923570969814
+1e. ham recall: 0.9826666666666667
+1f. ham F1 score: 0.9643441282302911
+
+2. Performance on the development data with 10% of the training data
+2a. spam precision: 0.9867568329106791 
+2b. spam recall: 0.9529251700680272 
+2c. spam F1 score: 0.969545957918051
+2d. ham precision:  0.8936039360393604  
+2e. ham recall: 0.9686666666666667  
+2f. ham F1 score: 0.9296225207933463
+
+3. Description of enhancement(s) you tried (e.g., different approach(es) to smoothing, treating common words differently, dealing with unknown words differently):
+	Enhancements made - Feature Modification:
+	a). Removed Punctuation 
+	b). Removed Stopwords
+	c). Removed words that had numeric characters in them 
+	d). Performed Stemming of all the words. 
+	(some of these steps were done using the NLTK library)
+	We can see that there is a small improvement in performance, when you compare (1,2 and 4)
+
+
+
+4. Best performance results based on enhancements. Note that these could be the same or worse than the standard implementation.
+4a. spam precision:  0.9939276842395804
+4b. spam recall:0.9798639455782313
+4c. spam F1 score: 0.9868457111537408
+4d. ham precision: 0.9523195876288659
+4e. ham recall: 0.9853333333333333
+4f. ham F1 score: 0.9685452162516381
