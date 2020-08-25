@@ -1,4 +1,4 @@
-# A Naive Bayes Classifier that detects Ham and Spam emails
+# A Naive Bayes Classifier that classifies Ham and Spam emails - Applied NLP
 Naive Bayes Classifier written in Python to classify emails as ham or spam.
 
 There are 3 files: 
